@@ -1,17 +1,31 @@
 'use strict';
 
 class Thermostat {
+
     constructor() {
-        this.temperature = new Temperature().defaultTemp;
+        this.temperature = new Temperature();
+        this.powerSavingMode = new PowerSaver();
     }
 
     increaseTemp() {
-        this.temperature++;
+        this.temperature.raiseTemp();
     }
 
     decreaseTemp() {
-        if (this.temperature > new Temperature().minTemp) {
-            this.temperature--;
-        }
+        this.temperature.dropTemp();
+    }
+
+    powerSavingOn() {
+        this.powerSavingMode.activate();
+        this.temperature.setMaxTemp(this.powerSavingMode.state);
+    }
+
+    powerSavingOff() {
+        this.powerSavingMode.deactivate();
+        this.temperature.setMaxTemp(this.powerSavingMode.state);
+    }
+
+    reset() {
+        this.temperature.resetTemp();
     }
 }
