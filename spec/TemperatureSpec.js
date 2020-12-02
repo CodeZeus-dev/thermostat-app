@@ -2,7 +2,7 @@
 
 describe("Temperature", function() {
 
-    var temperature;
+    let temperature;
 
     beforeEach(function() {
         temperature = new Temperature();

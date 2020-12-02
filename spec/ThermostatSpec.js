@@ -2,8 +2,8 @@
 
 describe('Thermostat', function() {
 
-    var thermostat;
-    var temperature;
+    let thermostat;
+    let temperature;
 
     beforeEach(function() {
         thermostat = new Thermostat();
