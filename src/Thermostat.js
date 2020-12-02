@@ -2,9 +2,9 @@
 
 class Thermostat {
 
-    constructor() {
-        this.temperature = new Temperature();
-        this.powerSavingMode = new PowerSaver();
+    constructor(temperature = new Temperature(), pSM = new PowerSaver()) {
+        this.temperature = temperature;
+        this.powerSavingMode = pSM;
     }
 
     increaseTemp() {
