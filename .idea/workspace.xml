@@ -11,8 +11,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="22884cc2-a449-4947-9e02-15608dcde9f2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/thermostat-app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/thermostat-app.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spec/TemperatureSpec.js" beforeDir="false" afterPath="$PROJECT_DIR$/spec/TemperatureSpec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spec/ThermostatSpec.js" beforeDir="false" afterPath="$PROJECT_DIR$/spec/ThermostatSpec.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Temperature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temperature.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Thermostat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thermostat.js" afterDir="false" />
