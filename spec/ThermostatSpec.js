@@ -17,4 +17,27 @@ describe('Thermostat', function() {
         })
     })
 
+    describe('Change the temperature up', function () {
+        it('can increase the temperature from default', function () {
+            thermostat.increaseTemp();
+            expect(thermostat.temperature).toEqual(21);
+        })
+    })
+
+    describe('Change the temperature down', function () {
+        it('can decrease the temperature from default', function () {
+            thermostat.decreaseTemp();
+            expect(thermostat.temperature).toEqual(19);
+        })
+    })
+
+    describe('That it can set a minimum temperature', function () {
+        it('it can set the minimum temperature to 10', function () {
+            for (let i = 0; i < 11; i++) {
+                thermostat.decreaseTemp();
+            }
+            expect(thermostat.temperature).toEqual(10)
+        })
+    })
+
 })
