@@ -12,15 +12,18 @@
   <component name="ChangeListManager">
     <list default="true" id="22884cc2-a449-4947-9e02-15608dcde9f2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/TemperatureSpec.js" beforeDir="false" afterPath="$PROJECT_DIR$/spec/TemperatureSpec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spec/ThermostatSpec.js" beforeDir="false" afterPath="$PROJECT_DIR$/spec/ThermostatSpec.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Temperature.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temperature.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Thermostat.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Thermostat.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -31,6 +34,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="dart.analysis.tool.window.visible" value="false" />
@@ -48,7 +52,7 @@
       <updated>1606925888073</updated>
       <workItem from="1606925889164" duration="2584000" />
       <workItem from="1606929096552" duration="1443000" />
-      <workItem from="1606989783902" duration="4672000" />
+      <workItem from="1606989783902" duration="5280000" />
     </task>
     <servers />
   </component>
