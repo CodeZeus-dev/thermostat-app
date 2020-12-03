@@ -65,4 +65,20 @@ describe("Temperature", function() {
             expect(temperature.currentTemp).toEqual(20);
         })
     })
+
+    describe('Current energy usage', function() {
+        it('returns low-energy for temperatures < 18 degrees', function() {
+            temperature.currentTemp = 16;
+            expect(temperature.energyUsage()).toEqual('low-usage');
+        })
+
+        it('returns medium-energy for temperatures <= 25 degrees', function() {
+            expect(temperature.energyUsage()).toEqual('medium-usage');
+        })
+
+        it('returns high-energy for temperatures > 25 degrees', function() {
+            temperature.currentTemp = 30;
+            expect(temperature.energyUsage()).toEqual('high-usage');
+        })
+    })
 })

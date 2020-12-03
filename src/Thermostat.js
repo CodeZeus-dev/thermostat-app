@@ -28,4 +28,8 @@ class Thermostat {
     reset() {
         this.temperature.resetTemp();
     }
+
+    currentEnergyUsage() {
+        return this.temperature.energyUsage();
+    }
 }
