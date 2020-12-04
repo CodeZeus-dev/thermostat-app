@@ -3,16 +3,33 @@
     <head>
         <meta charset="UTF-8">
         <title>Thermostat</title>
-        <script src="src/Thermostat.js"></script>
-        <script src="src/Temperature.js"></script>
-        <script src="src/PowerSaver.js"></script>
+        <link rel="stylesheet" href="./public/style.css" type="text/css">
+        <script src="js/jquery.js"></script>
     </head>
     <body>
         <header>
             <h1>Thermostat 1.0</h1>
         </header>
         <main>
-
+            <section id="temp-panel">
+                <h3 id="current-temp"></h3>
+            </section>
+            <section id="alter-temp">
+                <button type="button" id="increase-temp">Up</button>
+                <button type="button" id="decrease-temp">Down</button>
+                <button type="button" id="reset-temp">Reset</button>
+            </section>
+            <section id="power-saver">
+                <p>
+                    Power Saving Mode
+                </p>
+                <button type="button" id="ps-on">On</button>
+                <button type="button" id="ps-off">Off</button>
+            </section>
         </main>
+        <script src="js/interface.js"></script>
+        <script src="src/Thermostat.js"></script>
+        <script src="src/Temperature.js"></script>
+        <script src="src/PowerSaver.js"></script>
     </body>
 </html>

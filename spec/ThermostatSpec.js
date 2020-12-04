@@ -77,16 +77,16 @@ describe('Thermostat', function() {
     describe("Thermostat's current energy usage", function() {
         it('returns low-energy for temperatures < 18 degrees', function() {
             thermostat.temperature.currentTemp = 16;
-            expect(thermostat.currentEnergyUsage()).toEqual('low-usage');
+            expect(thermostat.energyUsage()).toEqual('low-usage');
         })
 
         it('returns medium-energy for temperatures <= 25 degrees', function() {
-            expect(thermostat.currentEnergyUsage()).toEqual('medium-usage');
+            expect(thermostat.energyUsage()).toEqual('medium-usage');
         })
 
         it('returns high-energy for temperatures > 25 degrees', function() {
             thermostat.temperature.currentTemp = 30;
-            expect(thermostat.currentEnergyUsage()).toEqual('high-usage');
+            expect(thermostat.energyUsage()).toEqual('high-usage');
         })
     })
 })

@@ -12,7 +12,7 @@ class Temperature {
     }
 
     setMaxTemp(powerSaverState) {
-        if (powerSaverState === true) {
+        if (powerSaverState === true && this.currentTemp > 25) {
             this.maxTemp = 25;
             this.currentTemp = this.maxTemp;
         }
@@ -29,15 +29,5 @@ class Temperature {
 
     resetTemp() {
         this.currentTemp = 20;
-    }
-
-    energyUsage() {
-        if (this.currentTemp < 18) {
-            return "low-usage";
-        } else if (this.currentTemp <= 25) {
-            return "medium-usage";
-        } else {
-            return "high-usage";
-        }
     }
 }

@@ -29,7 +29,13 @@ class Thermostat {
         this.temperature.resetTemp();
     }
 
-    currentEnergyUsage() {
-        return this.temperature.energyUsage();
+    energyUsage() {
+        if (this.temperature.currentTemp < 18) {
+            return "low-usage";
+        } else if (this.temperature.currentTemp <= 25) {
+            return "medium-usage";
+        } else {
+            return "high-usage";
+        }
     }
 }
