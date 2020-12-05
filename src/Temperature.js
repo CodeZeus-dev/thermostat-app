@@ -1,13 +1,13 @@
 'use strict';
 
-const defaultTemperature = 20;
-const minimumTemp = 10;
+const _DEFAULT_TEMPERATURE = 20;
+const _MINIMUM_TEMP = 10;
 
 class Temperature {
 
     constructor(){
-        this.minTemp = minimumTemp;
-        this.currentTemp = defaultTemperature;
+        this.minTemp = _MINIMUM_TEMP;
+        this.currentTemp = _DEFAULT_TEMPERATURE;
         this.maxTemp = 25;
     }
 

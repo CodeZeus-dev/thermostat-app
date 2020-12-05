@@ -1,17 +1,15 @@
 'use strict';
 
-class PowerSaver {
+function PowerSaver( default_state = true ) {
+    this.state = default_state;
+}
 
-    constructor(default_state = true) {
-        this.state = default_state;
-    }
-
-    activate(){
+PowerSaver.prototype = {
+    activate: function() {
         this.state = true;
-    }
+    },
 
-    deactivate(){
+    deactivate: function() {
         this.state = false;
     }
-
 }
