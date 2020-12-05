@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <title>Thermostat</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <link rel="stylesheet" href="./public/style.css" type="text/css">
         <script src="js/jquery.js"></script>
     </head>
@@ -11,12 +12,26 @@
             <h1>Thermostat 1.0</h1>
         </header>
         <main>
+            <section id="temp-info">
+                <label for="city-choice">Choose a city:</label>
+                <input list="available-cities" id="city-choice" name="city-choice" placeholder="London">
+                <datalist id="available-cities">
+                    <option selected value="London"></option>
+                    <option value="Thessaloniki"></option>
+                    <option value="Paris"></option>
+                    <option value="Melbourne"></option>
+                    <option value="Ouagadougou"></option>
+                </datalist>
+                <h2>
+                    The temperature in <span id="render-temperature"></span> degrees.
+                </h2>
+            </section>
             <section id="temp-panel">
                 <h3 id="current-temp"></h3>
             </section>
             <section id="alter-temp">
-                <button type="button" id="increase-temp">Up</button>
-                <button type="button" id="decrease-temp">Down</button>
+                <button type="button" id="increase-temp">+</button>
+                <button type="button" id="decrease-temp">-</button>
                 <button type="button" id="reset-temp">Reset</button>
             </section>
             <section id="power-saver">
