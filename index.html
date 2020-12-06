@@ -9,38 +9,54 @@
     </head>
     <body>
         <header>
-            <h1>Thermostat 1.0</h1>
+            <h1 class="display-4" style="text-align:center">Thermostat 1.0</h1>
         </header>
         <main>
-            <section id="temp-info">
-                <label for="city-choice">Choose a city:</label>
-                <input list="available-cities" id="city-choice" name="city-choice" placeholder="London">
-                <datalist id="available-cities">
-                    <option selected value="London"></option>
-                    <option value="Thessaloniki"></option>
-                    <option value="Paris"></option>
-                    <option value="Melbourne"></option>
-                    <option value="Ouagadougou"></option>
-                </datalist>
-                <h2>
-                    The temperature in <span id="render-temperature"></span> degrees.
-                </h2>
-            </section>
-            <section id="temp-panel">
-                <h3 id="current-temp"></h3>
-            </section>
-            <section id="alter-temp">
-                <button type="button" id="increase-temp">+</button>
-                <button type="button" id="decrease-temp">-</button>
-                <button type="button" id="reset-temp">Reset</button>
-            </section>
-            <section id="power-saver">
-                <p>
-                    Power Saving Mode
-                </p>
-                <button type="button" id="ps-on">On</button>
-                <button type="button" id="ps-off">Off</button>
-            </section>
+            <div class="container">
+                <section id="temp-info">
+                    <div class="form-group">
+                        <label for="city-choice">Choose a city to display the weather:</label>
+                        <input list="available-cities" class="form-control" id="city-choice" name="city-choice" style="width:250px" placeholder="London">
+                        <datalist id="available-cities">
+                            <option selected value="London"></option>
+                            <option value="Thessaloniki"></option>
+                            <option value="Paris"></option>
+                            <option value="Melbourne"></option>
+                            <option value="Ouagadougou"></option>
+                            <option value="Limassol"></option>
+                            <option value="Athens"></option>
+                            <option value="Boston"></option>
+                            <option value="Singapore"></option>
+                            <option value="Vienna"></option>
+                            <option value="Reykjavik"></option>
+
+                        </datalist>
+                    </div>
+                    <h2 class="display-5">
+                        The temperature in <span id="render-temperature"></span> degrees.
+                    </h2>
+                </section>
+                <br><br>
+                <div style="text-align:center">
+                    <section id="temp-panel">
+                        <h3 id="current-temp"></h3>
+                    </section>
+                    <br>
+                    <section id="alter-temp">
+                        <button type="button" class="btn btn-dark" id="increase-temp">+</button>
+                        <button type="button" class="btn btn-dark" id="decrease-temp">-</button><br><br>
+                        <button type="button" class="btn btn-secondary" id="reset-temp">Reset</button>
+                    </section>
+                    <br><br>
+                    <section id="power-saver">
+                        <h4 class="display-5">
+                            Power Saving Mode
+                        </h4><br>
+                        <button type="button" class="btn btn-success" id="ps-on">On</button>
+                        <button type="button" class="btn btn-danger" id="ps-off">Off</button>
+                    </section>
+                </div>
+            </div>
         </main>
         <script src="js/interface.js"></script>
         <script src="src/Thermostat.js"></script>
